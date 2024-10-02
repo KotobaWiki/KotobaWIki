@@ -1,0 +1,104 @@
+/* LOGO TEXTS */
+.logo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #131316;
+    margin: 0;
+    padding: 24px;
+    
+}
+.mpl{
+    margin-top: 50px;
+    margin-left: 730px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-size: 65px;
+    margin-bottom: 5px;
+}
+
+.titlename{
+
+    margin-left: 25px;
+    font-size: 37px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    /* margin-bottom: 470px; */
+}
+/* LOGOTEXTS */
+/* ###################################################### */
+/* IMG */
+.cover{
+
+        width: 340px;
+        margin-left: 25px;
+}
+
+.imgdisc{
+    width: 80px;
+}
+.imgcatal{
+    margin-left: 50px;
+    margin-top: 25px;
+    width: 250px;
+    margin-right: 100px;
+}
+/* IMG */
+/* ############################################## */
+/* TEXT */
+.desc{
+    
+    margin-right: 250px;
+    font-size: 20px;
+}
+.text,.desc,.textd,.info{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    margin-left: 25px;
+    
+
+}
+.textcatal{
+    margin-right: 50px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+.textd{
+    font-size: 18px;
+    margin-right: 70px ;
+}
+.jpn{
+    font-size: 13px;
+    color: gray;
+}
+.navig{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;   
+    margin-left: 10px;
+}
+.info {
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+li{
+    margin-bottom: 20px;
+}
+/* TEXT */
+/* #################################### */
+a{
+    color: #ab71ff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #282730;
+    padding: 0;
+    margin: 0;;
+
+}
+
+
+
+
+
