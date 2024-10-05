@@ -4,15 +4,16 @@
     background-color: #131316;
     margin: 0;
     padding: 24px;
+    font-size: 40px;
     
 }
 .mpl{
     margin-top: 50px;
-    margin-left: 730px;
+    margin-left: 670px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: whitesmoke;
     font-size: 65px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .titlename{
@@ -27,9 +28,10 @@
 /* ###################################################### */
 /* IMG */
 .cover{
-
+        max-width: 100%;
         width: 340px;
         margin-left: 25px;
+        height: auto;
 }
 
 .imgdisc{
@@ -40,6 +42,9 @@
     margin-top: 25px;
     width: 250px;
     margin-right: 100px;
+}
+.cat{
+    width: 50px;
 }
 /* IMG */
 /* ############################################## */
@@ -97,6 +102,11 @@ body{
     padding: 0;
     margin: 0;;
 
+}
+svg{
+    margin-left: -65px;
+    margin-top: 0px;
+    
 }
 
 

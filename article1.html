@@ -25,18 +25,24 @@
             <thead>
                 <tr>
                     <th colspan="2" style="text-align: left;">
-                        <h1 class="titlename">
-                            JoJo’s Bizarre Adventure Phantom Blood
-                        </h1>
-                        <p class="jpn">ジョジョの奇妙な冒険</p>
+                        <div>
+                            <h1 class="titlename">
+                                JoJo’s Bizarre Adventure Phantom Blood
+                            </h1>
+                            <p class="jpn">ジョジョの奇妙な冒険</p>
+                        </div>
                     </th>
                 </tr>
-                </thead>
+            </thead>
 
             <tbody>
             <tr>    
             <td>
-                <img class="cover" src="fig/jojopic1.jpg" alt="jojo">
+                <img class="cover" 
+                    src="fig/jojopic1.jpg" 
+                    srcset="fig/jojopic1.jpg 300w, fig/jojopic1.jpg 600w, fig/jojopic1.jpg 1200w"
+                    sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1200px"
+                    alt="jojo">
                 </td>
                 <td class="info">
                         <ul>
@@ -166,5 +172,6 @@
         </tr>  
         </table>
         </ol>
+
 </body>
 </html>
