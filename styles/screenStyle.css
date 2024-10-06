@@ -17,7 +17,7 @@
 }
 
 .titlename{
-
+    margin-bottom: 15px;
     margin-left: 25px;
     font-size: 37px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -44,7 +44,7 @@
     margin-right: 100px;
 }
 .cat{
-    width: 50px;
+    width: 55px;
 }
 /* IMG */
 /* ############################################## */
@@ -69,7 +69,7 @@
 }
 .textd{
     font-size: 18px;
-    margin-right: 70px ;
+    margin-right: 7px;
 }
 .jpn{
     font-size: 13px;
@@ -90,6 +90,7 @@
 li{
     margin-bottom: 20px;
 }
+
 /* TEXT */
 /* #################################### */
 a{
@@ -97,6 +98,7 @@ a{
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body{
     background-color: #282730;
     padding: 0;
@@ -108,6 +110,20 @@ svg{
     margin-top: 0px;
     
 }
+ol {
+    list-style-type: decimal;
+    margin: 0px;
+    padding: 0px;   
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+
+
 
 
 
