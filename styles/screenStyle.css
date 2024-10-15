@@ -130,7 +130,12 @@ footer{
     
 }
 
+@media (max-width: 1024px) {
+    ol{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+}
 
 
 
