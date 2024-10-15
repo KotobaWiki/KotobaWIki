@@ -52,8 +52,11 @@
 .desc{
     max-width: 1650px;
     font-size: 20px;
+    color: #dbdbdd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 25px;
 }
-.text,.desc,.textd,.info{
+.text,.textd,.info{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: whitesmoke;
     margin-left: 25px;
