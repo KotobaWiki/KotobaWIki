@@ -50,8 +50,7 @@
 /* ############################################## */
 /* TEXT */
 .desc{
-    
-    margin-right: 250px;
+    max-width: 1650px;
     font-size: 20px;
 }
 .text,.desc,.textd,.info{
