@@ -1,0 +1,27 @@
+a {
+    color: black;
+}
+body{
+    background-color: white;
+}
+.wread{
+    display: none;
+}
+.olist{
+    display: none;
+}
+.navig{
+    display: none;
+}
+.navijjba{
+    display: none;
+}
+.text,.textd,.info, .desc,.titlename{
+    font-family: 'Times New Roman', Times, serif;
+}
+line{
+    stroke: black;
+}
+.cover{
+    width: 175px;
+}

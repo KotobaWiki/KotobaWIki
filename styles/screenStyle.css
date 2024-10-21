@@ -4,25 +4,26 @@
     background-color: #131316;
     margin: 0;
     padding: 24px;
-    font-size: 40px;
+    font-size: 3rem;
     
 }
 .mpl{
     margin-top: 50px;
-    margin-left: 670px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: whitesmoke;
-    font-size: 65px;
-    margin-bottom: 0px;
+    font-size: 4em;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .titlename{
+    display: flex;
     margin-bottom: 15px;
     margin-left: 25px;
-    font-size: 37px;
+    font-size: 2.5em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: whitesmoke;
-    /* margin-bottom: 470px; */
+   
 }
 /* LOGOTEXTS */
 /* ###################################################### */
@@ -30,7 +31,7 @@
 .cover{
         max-width: 100%;
         width: 340px;
-        margin-left: 25px;
+        margin-left: -25px;
         height: auto;
 }
 
@@ -38,14 +39,18 @@
     width: 80px;
 }
 .imgcatal{
-    margin-left: 50px;
-    margin-top: 25px;
-    width: 250px;
-    margin-right: 100px;
+    max-width: 250px;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
+    
 }
+
+
 .cat{
     width: 55px;
 }
+
 /* IMG */
 /* ############################################## */
 /* TEXT */
@@ -64,10 +69,12 @@
 
 }
 .textcatal{
-    margin-right: 50px;
+
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: whitesmoke;
+    text-align: center;
+    
 }
 .textd{
     font-size: 18px;
@@ -84,13 +91,39 @@
     margin-top: 10px;   
     margin-left: 10px;
 }
+.navijjba{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;   
+    
+}
 .info {
     font-size: 18px;
     margin-bottom: 20px;
-
+    display: flex;
+}
+.infoin{
+    margin-left: 0px;
 }
 li{
     margin-bottom: 20px;
+}
+.new{
+    transform: rotate(45deg);
+    color: #741dd8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.7em;
+    animation-name: animtext;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animtext {
+    0%   {color: gray; left:0px; top:0px;}
+    25%  {color:#741dd8; left:200px; top:0px;}
+    50%  {color: gray; left:200px; top:200px;}
+    75%  {color:#741dd8; left:0px; top:200px;}
+    100% {color:gray; left:0px; top:0px;}
 }
 
 /* TEXT */
@@ -99,14 +132,19 @@ a{
     color: #ab71ff;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease-in-out;
 }
-
+a:hover{
+    color: #741dd8;
+}
 body{
     display: flex;
     flex-direction: column;
     background-color: #282730;
     padding: 0;
     margin: 0;
+    /* margin: auto;
+    max-width: 1500px; */
 
 }
 svg{
@@ -114,7 +152,7 @@ svg{
     margin-top: 0px;
     
 }
-ol {
+.olist {
     list-style-type: decimal;
     margin: 0px;
     padding: 0px;   
@@ -126,18 +164,66 @@ ol {
 footer{
     text-align: center;
     opacity: 30%;
-    font-size: 1rep;
+    font-size: 1rem;
     color:gray;
     margin: 2rem auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
+.resp{
+    max-width: 1700px;
+    margin: auto;
+    min-width: 1500px;
+}
+.wread{
+    margin-left: 300px;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(202, 195, 195);
+    opacity: 0.9;
+    width: 200px;
+    height: 100px;
+
+}
+
+
 
 @media (max-width: 1024px) {
-    ol{
+    .olist{
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .imgcatal{
+        margin: auto;
+        max-width: 250px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .navijjba{
+        margin-left: -18.3px;
+    }
+    .resp{
+        min-width: 0px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .wread{
+        margin-left: -25px;
+    }
+    .infoin{
+        margin-left: -45px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .titlename{
+        flex-direction: column;
+    }
+    .new{
+        transform: none;
+        font-size: 0.5em;
+    
+    }
 }
 
 
