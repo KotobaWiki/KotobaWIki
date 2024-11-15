@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KotobaWiki</title>
+    <link rel="stylesheet" href="styles/screenStyle.css">
+    <link rel="icon" href="fig/titleicon.svg" type="image/png">
+    <link rel="stylesheet" href="public/css/printStyle.css" media="print">
+</head>
+<body>
+    <header class="logo" style="margin-bottom: 25px;">
+        <nav>
+        <div class="resp">
+        <a href="index.html"><strong> KotobaWiki </strong>
+            <img class="cat" src="fig/cat.svg" alt="cat"></a>
+        </div>
+            </nav>
+            </header>
+        <div class="resp">
+            <a href="index.html" style="font-size: 1.5em;"> &lt;- Back</a>
+            <p class="tmyo">Tell me Your opinion</p>
+        <form id="form">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" size="20" maxlength="20" style="margin-bottom: 10px;" placeholder="Name here" required>
+            <br>        
+            <label for="Email">Email:</label>
+            <input type= "email" name="Email" id="Email" placeholder="Email here" size="21" maxlength="30" required>
+            <!-- Radio/ -->
+            <p style="margin-bottom: 7px; margin-top: 35px;">I am:</p>
+            <input type="radio" id="Newbie" name="Who" value="Newbie">
+            <label for="Newbie">Newbie</label>
+            <br>
+            <input type="radio" id="Regular" name="Who" value="Regular">
+            <label for="Regular">Regular</label><br>
+            <input type="radio" id="Otaku" name="Who" value="Otaku">
+            <label for="Otaku">Otaku</label>
+            <br>
+            <!-- /Radio -->
+                
+            <br>
+            <label for="fb">My opinion:</label>
+            <textarea name="fb" id="fb" cols="50" rows="5" placeholder="What do you think?" maxlength="1000" style="resize: vertical; font-size: 17px; margin-top: 7px; width: 90%;" required></textarea>
+            <br>
+            <!-- URL/ -->
+            <br>
+            <label for="cbw">URL</label>
+            <input type="checkbox" name="url" id="cbw">
+            <br>
+            <input type="url" name="url" id="inputurl" size="45" style="display: none; margin-bottom: 1%;" placeholder="Your URL here">
+            <!-- /URL -->
+
+            <!-- KeyWords/ -->
+            <label for="kw">Keywords</label>
+            <input type="checkbox" name="keywords" id="kw">
+            <br>
+            <input type="text" name="kwi" id="kwinput" style="display: none;" placeholder="Keywords" list="kwlist">
+            <datalist id="kwlist">
+                <option value="Manga">
+                <option value="Manhwa">
+                <option value="Colors">
+                <option value="Graphics">
+                <option value="Story">
+                <option value="Website">
+                <option value="Design">        
+            </datalist>
+            <br>
+            <!-- /Keywords -->
+            <button class="formbuttons" type="reset">Reset</button>
+            <button style="margin-left: 48%;" class="formbuttons" type="submit" id="send">Send</button>
+            
+        </form>
+        
+        <h3 style="color: rgba(111, 87, 167, 0.637); margin-left: 2%; margin-top: 3%; font-size: 1.7em;">They say...</h3>
+        <script id="opinion-template" type="text/template">
+            <div class="opinion-entry" style="margin-bottom: 15px;">
+                <p style="color:#dbbddb;"><strong style="color:#ab71ff;">{{name}}</strong> ({{who}}) says:</p>
+                <p>{{opinion}}</p>  
+                <p style="color:#bbbbbb;">Kw: {{kwrds}}</p>
+                <img style="max-width: 250px; max-height: 250px" src={{url}} alt="{{url}}">
+                <p style="color:#bbbbbb; opacity: 0.3;">{{date}}</p>
+                <hr style="border: 0; height: 1px; background: rgba(145, 127, 187, 0.555);">
+            </div>
+        </script>
+        <div id="outputopinion"></div>
+        
+        <footer>2024 Volodymyr Vulchyn. All rights reserved.</footer>
+    </div>
+    <script type="module" src="public/js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+</body>
+</html>

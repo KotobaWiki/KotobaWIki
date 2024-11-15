@@ -6,6 +6,7 @@
     padding: 24px;
     font-size: 3rem;
     
+    
 }
 .mpl{
     margin-top: 50px;
@@ -186,8 +187,62 @@ footer{
     height: 100px;
 
 }
+/* FORM */
+label{
+    vertical-align: top;
+}
+form{
+    margin-top: 3%;
+    font-size: 1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-align: left;
+    margin: auto;
+    max-width: 500px;
+    
+}
+input{
+    height: 25px;
+    font-size: 17px;
+}
+::placeholder{
+    font-size: 1.20em;
+}
+.formbuttons{
+    width: 25%;
+    height: 40px;
+    font-size: 0.8em;
+}
+.tmyo{
+    text-align: center; 
+    font-size: 2em; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: beige; 
+    margin-top: 1%;
+    padding: 1%;
+    border-bottom:#dbdbdd outset 1px;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 1%;
+    
 
+}
+input:invalid, textarea:invalid{
+    border:#b11e1e solid 2px;
+}
+input:valid{
+    color: rgb(8, 151, 8);
+}
+.opinion-entry{
+    overflow-wrap: anywhere;
+    color: #f8f5fa;
+    font-family: sans-serif;
+    font-size: 1.05em;
+    max-width: 1500px;
+    
 
+}
+/* FORM */
 
 @media (max-width: 1024px) {
     .olist{
@@ -229,7 +284,21 @@ footer{
         margin-top: -20px;
         margin-left: 1px;
     }
+    form{
+        margin: 3%;
+    }
+    #inputurl{
+        width: 90%;
+    }
+    .tmyo{
+        margin-top: 3%;
+    }
+    .opinion-entry{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
+
 
 
 
