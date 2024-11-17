@@ -5,13 +5,13 @@ export class OpinionsHandler {
     }
 
     getOpinions() {
-        return JSON.parse(localStorage.getItem(this.storageKey)) || [];
+        return JSON.parse(localStorage.getItem(this.storageKey)) || []; //get from local storage
     }
 
     
     saveOpinion(opinion) {
         const opinions = this.getOpinions();
         opinions.push(opinion);
-        localStorage.setItem(this.storageKey, JSON.stringify(opinions));
+        localStorage.setItem(this.storageKey, JSON.stringify(opinions));//get to local storage
     }
 }
