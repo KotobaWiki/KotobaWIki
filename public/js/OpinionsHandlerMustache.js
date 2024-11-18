@@ -9,7 +9,7 @@ export class OpinionsHandlerMustache {
     }
 
     renderOpinions() {
-        const opinions = this.opinionsHandler.getOpinions();
+        const opinions = this.opinionsHandler.getOpinions(); // from local storage
         this.outputElement.innerHTML = ""; //avoiding duplicate
 
         opinions.forEach(opinion => {
@@ -20,6 +20,6 @@ export class OpinionsHandlerMustache {
 
     addOpinion(opinionData) {
         this.opinionsHandler.saveOpinion(opinionData); //add to local storage
-        this.renderOpinions();
+        this.renderOpinions(); //render
     }
 }
