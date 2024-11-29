@@ -12,6 +12,6 @@ export class OpinionsHandler {
     saveOpinion(opinion) {
         const opinions = this.getOpinions();
         opinions.push(opinion);
-        localStorage.setItem(this.storageKey, JSON.stringify(opinions));//get to local storage
+        localStorage.setItem(this.storageKey, JSON.stringify(opinions));//save to local storage
     }
 }
